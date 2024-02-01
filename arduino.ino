@@ -66,9 +66,9 @@ void loop() {
   Serial.print("},LDR{");
   Serial.print(valorLDR);
   Serial.print("},T1{");
-  Serial.print(digitalRead(pinoTransistor1) == HIGH ? "HIGH" : "LOW");
+  Serial.print(digitalRead(pinoTransistor1) == LOW ? "HIGH" : "LOW");
   Serial.print("},T2{");
-  Serial.print(digitalRead(pinoTransistor2) == HIGH ? "HIGH" : "LOW");
+  Serial.print(digitalRead(pinoTransistor2) == LOW ? "HIGH" : "LOW");
   Serial.print("},SP{");
   Serial.print(meuServo.read());  // Imprime a posição atual do servo
   Serial.println("};");
